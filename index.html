@@ -59,9 +59,38 @@
                         <p class="modal-title">
                             Оставьте свои данные,мы вам перезвоним
                         </p>
-                    <!-- <form>
-                        <input type="text"
-                    </form> -->
+                    <form class="modal-form">
+                        <div class="form-container">                            
+                            <label class="form-name" for="name">Имя</label>
+                                <span class="form-case">
+                                    <input class="form-box" type="text" name="name" id="name"/>
+                                        <svg class="form-svg" width="12" height="12">
+                                            <use href="./images/sprite.svg#icon-person-black"></use>
+                                        </svg>
+                                </span>
+                        </div>
+                        <div class="form-container">
+                            <label for="tel">Телефон</label>
+                            <input class="form-box" type="tel" name="tel" id="tel"/>
+                        </div>
+                        <div class="form-container">
+                            <label for="email">Почта</label>
+                            <input class="form-box" type="email" name="email" id="email" />
+                        </div>
+                        <div class="form-container">
+                            <label for="comment">Комментарий</label>
+                            <input class="form-box" type="text" name="comment" id="comment"/>
+                        </div>
+                        <div class="form-container">                        
+                            <input type="checkbox" name="" value="Соглашаюсь с рассылкой и принимаю Условия договора" id="checkbox"/>
+                            <label for="checkbox">Соглашаюсь с рассылкой и принимаю Условия договора</label>
+                        </div>
+                        <div class="form-container">                        
+                            <button  class="send-button" type="submit">                     
+                                <span class="send-button-text">Отправить</span>
+                            </button>
+                        </div>
+                    </form>
                         <button data-modal-close class="close-button">
                             <svg class="icon-close">
                                 <use href="./images/sprite.svg#icon-close"></use>
@@ -343,7 +372,7 @@
             </address>
             </div>
             <div class="footer-cosial-block">
-                <h3 class="footer-logo-title">Присоединяйтесь</h3>
+                <h3 class="footer-title">Присоединяйтесь</h3>
                 <ul class="footer-logo-list">
                     <li class="footer-logo-item">
                         <a class="footer-social-link" href="">
@@ -374,6 +403,20 @@
                     </a>
                     </li>
                 </ul>
+            </div>
+            <div class="footer-form">
+                <h3 class="footer-title">
+                    Подпишитесь на рассылку
+                </h3>
+                <form class="footer-form-wrapper">
+                    <input class="footer-email-form" type="email" name="mail-subscribe" placeholder="E-mail"/>
+                    <button  class="subscribe-button" type="submit">                     
+                        <span class="subscribe-button-text">Подписаться</span>
+                            <svg class="icon-send" width="24" height="24">
+                                <use href="./images/sprite.svg#icon-send"></use>
+                            </svg>
+                    </button>
+                </form>
             </div>
         </div>
     </footer>
