@@ -710,12 +710,14 @@ color: var(--main-text-color);
     fill: #2196f3;
 }
 .form-box:focus{
+    outline: none;
+    border: 1px solid #2196f3;
 }
-.form-case:focus + .form-box{
+/* .form-case:focus + .form-box{
     border: 1px solid #2196F3;
     box-sizing: border-box;
     border-radius: 4px;
-}
+} */
 .form-case{
     position: relative;
     top: 0;
