@@ -709,7 +709,7 @@ color: var(--main-text-color);
 .form-box:focus + .form-svg{
     fill: #2196f3;
 }
-.form-box:focus{
+.form-box:focus {
     outline: none;
     border: 1px solid #2196f3;
 }
